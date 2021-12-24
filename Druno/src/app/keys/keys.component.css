@@ -1,0 +1,53 @@
+.container {
+    margin-top: 1%;
+    width: 70%;
+    height: 70%;
+    background: #578e77;
+    border: 1px solid #416a59;
+    border-radius: 10%;
+}
+
+span {
+    box-shadow: 10px 5px 5px black;
+    border-radius: 50%;
+    height: 100%;
+    width: 30%;
+    font-size: 35px;
+    margin-top: 3%;
+    padding-top: 3%;
+    background-color: #71a891;
+    color: #a0c5b6;
+    cursor: pointer;
+}
+
+.form-check-label {
+    font-family: zefani;
+    font-size: 30px;
+    color: #4e7e6a;
+    font-weight: 400;
+}
+
+.form-check-input {
+    /* height: 25 px !important;
+    width: 50 px !important; */
+    font-size: 15px;
+    margin-top: 1.5%;
+}
+
+.row {
+    height: 100px;
+    text-align: center;
+    margin: 5%;
+}
+
+.col {
+    border: 5px solid gray;
+    border-radius: 15%;
+}
+
+.form-check .form-check-input {
+    margin-left: 0%;
+    float: none;
+    text-align: center;
+    justify-content: center;
+}

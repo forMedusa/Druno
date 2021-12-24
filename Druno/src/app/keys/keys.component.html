@@ -1,0 +1,25 @@
+<h1 style="text-align: center; color: #416a59; font-family: quantico; font-weight: 500;">
+    Druno!</h1>
+<p style="text-align: center;color: #4e7e6a;font-family: audrey; font-weight: 400;">Welcome to Druno (DRUm-piaNO),which is a mixture of Drum and Piano sounds.
+    <br>You can use this Web-App both by using the keyboard and the keys given below: ENJOY!
+</p>
+<div class="form-check form-switch" style="text-align:center;">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Drum</label>
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" (click)="toggle() ">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Piano</label>
+</div>
+<div class="container" *ngIf="isShownD">
+    <div class="row justify-content-between ">
+        <h4 style="text-align:center;margin-top:-5%;color:#a0c5b6;font-family: audrey;">Drum</h4>
+        <span class="col-4" *ngFor="let key of bankOne " (click)="playAudio(key.url) ">
+        {{key.keyTrigger}}
+        </span>
+    </div>
+</div>
+<div class="container" *ngIf="isShownP">
+    <div class="row justify-content-between ">
+        <h4 style="text-align:center;margin-top:-5%;color:#a0c5b6;font-family: audrey;">Piano</h4>
+        <span class="col-4 " *ngFor="let key of bankTwo " (click)="playAudio(key.url) ">
+            {{key.keyTrigger}}
+        </span>
+    </div>
